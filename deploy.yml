@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::<159920394818>:role/<GITHUB_ACTIONS>
-          aws-region: ap-south-1
+          aws-region: us-east-1
 
       - name: Deploy files to S3
         run: aws s3 sync . s3://my-github-test-bucket --delete
