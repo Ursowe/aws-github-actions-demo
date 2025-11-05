@@ -21,7 +21,7 @@ steps:
        aws-region: "us-east-1"
 
        -name: Verify AWS credentials
-        run: aws sts get-caller-identify
+        run: aws sts get-caller-identity
 
   
        
